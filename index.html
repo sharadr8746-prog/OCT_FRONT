@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    padding: 30px 60px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7be00;
+    color: #000;
+    padding: 15px 30px;
+    font-weight: 700;
+    border-radius: 6px;
+}
+
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 600;
+}
+
+.nav-links .login-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+    gap: 40px;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #cccccc;
+    margin-bottom: 30px;
+    max-width: 650px;
+}
+
+.cta-login {
+    display: inline-block;
+    background-color: #f7be00;
+    color: #000;
+    padding: 12px 36px;
+    border-radius: 25px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.hero-image img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #f7be00;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 40px 0;
+    width: 100%;
+}
+
+.contact-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #f7be00;
+}
+.contact-form input::placeholder {
+    color: #f7be00; 
+    opacity: 1; 
+}
+
+.contact-form {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%; 
+}
+
+.contact-form input,
+.contact-form .form-group input {
+    width: 100%;
+    padding: 14px 20px;
+    background: transparent;
+    border: 1px solid #f7be00;
+    border-radius: 25px;
+    color:  #f7be00;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.submit-btn {
+    width: 180px;
+    padding: 12px;
+    background-color: #f7be00;
+    color: #000;
+    border: none;
+    border-radius: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 45%;
+}
+.table-section {
+    padding: 40px 0 60px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #f7be00; 
+}
+
+th, td {
+    padding: 16px 20px;
+    border-right: 1px solid #f7be00;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: transparent;
+    color: #f7be00;
+    font-weight: 700;
+    border-bottom: 1px solid #f7be00;
+}
+
+th:last-child, td:last-child {
+    border-right: none;
+}
+
+tfoot tr {
+    background-color: #f7be00;
+    color: #000;
+    font-weight: 700;
+}
+
+tfoot td {
+    border-top: none !important; 
+    box-shadow: none !important; 
+}
+</style>
+<body>
+
+   
+    <header class="header">
+        <div class="logo">Startup</div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#login" class="login-btn">Login</a>
+        </nav>
+    </header>
+
+   
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Startup Landing Page</h1>
+            <p>Welcome to our platform. We provide innovative solutions to scale your business ideas efficiently. Explore our features and connect with us to get started on your journey.</p>
+            <a href="#login" class="cta-login">Login</a>
+        </div>
+        <div class="hero-image">
+            <img src="./pngaaa.com-1566234.png" alt="Profile avatar">
+        </div>
+    </section>
+
+   
+    <section id="contact" class="contact-section" >
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" placeholder="Name" required width="100vw">
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="form-row">
+                <input type="tel" placeholder="Mobile Number" required>
+                <input type="text" placeholder="City" required>
+            </div>
+            <button type="submit" class="submit-btn">Submit Form</button>
+        </form>
+    </section>
+    <section class="table-section">
+        <table>
+            <thead>
+                <tr>
+                    <th>SNO.</th>
+                    <th>Startup Name</th>
+                    <th>Startup Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>WowIndia</td>
+                    <td>A startup featuring creative concepts.</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>TechVenture</td>
+                    <td>Scalable cloud architecture services.</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>InnoSphere</td>
+                    <td>Next-gen user experience frameworks.</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>00.</td>
+                    <td>Final Footer</td>
+                    <td>All rights reserved.</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+</body>
+</html>
